@@ -4,13 +4,6 @@ GREENCOLOR='\033[1;32m'
 YELLOWCOLOR='\033[1;33m'
 NC='\033[0m'
 
-sudo service apache2 stop
-sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
-sudo apt-get -y autoremove
-sudo service apache2 stop
-sudo apt-get remove -y apache2*
-sudo apt-get -y autoremove
-
 printf "${GREENCOLOR}Nice And Clean,Let's Begin! ${NC} \n\n"
 
 sudo apt-get update
@@ -40,11 +33,6 @@ printf "${GREENCOLOR}Successfully Installed PHP7.1 And PHP7.1-FPM ${NC} \n\n"
 
 printf "${YELLOWCOLOR}Configuring PHP7.2-FPM ${NC} \n"
 sudo service php7.2-fpm restart
-
-sudo service apache2 stop
-sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
-sudo apt-get remove -y apache2*
-sudo apt-get -y autoremove
 
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
 
