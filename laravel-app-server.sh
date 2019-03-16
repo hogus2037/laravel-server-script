@@ -35,7 +35,7 @@ printf "${YELLOWCOLOR}Installing PHP7.2 And PHP7.2-FPM ${NC} \n"
 sudo apt-get -y install php7.2
 sudo apt-get -y install php7.2-mysql
 sudo apt-get -y install php7.2-fpm
-sudo apt-get -y install php7.2-curl php7.2-xml php7.2-json php7.2-gd php7.2-mbstring php7.2-bcmath
+sudo apt-get -y install php7.2-curl php7.2-xml php7.2-json php7.2-gd php7.2-mbstring php7.2-bcmath php7.2-zip
 printf "${GREENCOLOR}Successfully Installed PHP7.1 And PHP7.1-FPM ${NC} \n\n"
 
 printf "${YELLOWCOLOR}Configuring PHP7.2-FPM ${NC} \n"
